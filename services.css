@@ -1,0 +1,45 @@
+.services
+{
+    position: relative;
+    height: 900px;;
+}
+
+.services img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .text
+{
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    font-weight: bold;
+    color: white;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.services .text h1
+{
+    font-size: 2.5em;
+}
+
+/*for phones*/
+@media screen and (max-width: 600px)
+{
+    .services
+    {
+        height: 600px;;
+    }
+
+    .services .text
+    {
+        padding: 0px 5px;
+        font-size: 0.9em;
+        top:0px;
+    }
+}

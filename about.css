@@ -1,0 +1,70 @@
+/*content*/
+.section
+{
+    margin: 100px 100px;
+    text-align: center;
+    text-align: justify;
+    background-image: linear-gradient(to right, rgb(163, 66, 134), rgb(98, 46, 139) );
+    height: 600px;
+}
+
+.contenttext
+{
+    width: 60%;
+    float: left;
+    font-size: 1.1em; 
+    padding: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.contentimage
+{
+    width: 40%;
+    object-fit: cover;
+    display: block;
+    float: right;
+    object-fit: cover;
+    height: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*For Phones*/
+@media screen and (max-width: 960px)
+{
+
+    .section
+    {
+        height: auto;
+        margin: 100px 20px;
+    }
+    .contenttext
+    {
+        float: none;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .contentimage
+    {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 960px)
+{
+    .contenttext
+    {
+        font-size: 0.8em;
+    }
+
+    .contentimage
+    {
+        height: 200px;
+    }
+}

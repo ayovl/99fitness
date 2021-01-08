@@ -1,0 +1,52 @@
+/*box-sizing*/
+*
+{
+    box-sizing: border-box;
+}
+
+/*body*/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 100%;/*for old ie browser to work with font resizing*/
+}
+
+.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column
+{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  /*For Tablet*/
+  @media screen and (max-width: 1200px)
+  {
+    .column
+    {
+        max-width: 50%;
+        flex: 50%;
+    }
+  }
+
+  /*For mobile*/
+  @media screen and (max-width: 700px) 
+  {
+    .column
+    {
+        max-width: 100%;
+        flex: 100%;
+    }
+  }

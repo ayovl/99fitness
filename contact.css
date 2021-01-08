@@ -1,0 +1,103 @@
+
+section
+{
+    min-height: 400px;
+}
+
+#address
+{
+    margin-left: 100px;
+    float: left;
+}
+
+#contact-no
+{
+    margin-right: 100px;
+    float: right;
+    margin-right: 100px;
+}
+
+#email
+{
+    margin-left: 100px;
+    float: left;
+    
+}
+
+#social
+{
+    margin-right: 100px;
+    float: right;
+    margin-right: 100px;
+}
+
+.card
+{
+    width: 40%;
+    background-image: linear-gradient(to right, rgb(163, 66, 134), rgb(98, 46, 139) );
+    padding: 30px;
+    height: 350px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 1.2em;
+    -webkit-text-stroke: 1px black;
+}
+
+.card h1
+{
+    -webkit-text-stroke: 1px black;
+}
+
+/*For Phones*/
+@media screen and (max-width: 1150px)
+{
+    #address
+    {
+        float: none;
+        margin: 0px auto 50px auto;
+        padding: 10px;
+        width: 85%;
+    }
+
+    #contact-no
+    {
+        float: none;
+        margin: 0px auto 50px auto;
+        padding: 10px;
+        width: 85%;
+    }
+
+    #email
+    {
+        float: none;
+        margin: 0px auto 50px auto;
+        padding: 10px;
+        width: 85%;
+    }
+
+    #social
+    {
+        float: none;
+        margin: 0px auto 50px auto;
+        padding: 10px;
+        width: 85%;
+    }
+
+    @media screen and (max-width: 500px)
+    {
+        .card
+        {
+            font-size: 0.9em;
+            height: 250px;
+        }
+    }
+
+    @media screen and (max-width: 350px)
+    {
+        .card
+        {
+            font-size: 0.7em;
+            height: 250px;
+        }
+    }
+}

@@ -1,0 +1,318 @@
+#welcome-note
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-weight: 900;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+/*for styling "Welcome" heading*/
+#welcome
+{
+    margin-bottom: 30px;
+    font-size: 3.5em;
+    text-align: center;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+
+/*text inside welcome note*/
+#wnote-text
+{
+    font-size: 1.3em; 
+    text-align: center;
+}
+
+#join-button
+{
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(50, 75, 129);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 6px grey, -2px -2px 6px grey;
+    transition: box-shadow 0.1s;
+    transition: font-size 0.1s;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#join-button:hover
+{
+    background-color: rgb(32, 60, 121);
+}
+
+#join-button:active
+{
+    box-shadow: none;
+    font-size: 1.4em;
+}
+
+#pop-up
+{
+    position:absolute;
+    top: 0;
+    background-color: rgb(128, 69, 128);
+    width: 0;
+    height: 0;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all  .4s;
+    -moz-transition: all  .4s;
+    -o-transition: all  .4s;
+    transition: all  .4s;
+    overflow: hidden;
+}
+
+
+#cancel-button
+{
+    display: block;
+    font-size: 50px;
+    transition: font-size 0.1s;
+    float: left; 
+    box-shadow: 2px 2px 5px rgb(114, 10, 114);  
+    cursor: pointer; 
+    transition: box-shadow 0.1s;
+    -webkit-transition: font-size 0.1s, box-shadow 0.1s;
+    -moz-transition: font-size 0.1s, box-shadow 0.1s;
+    -o-transition: font-size 0.1s, box-shadow 0.1s;
+    transition: font-size 0.1s, box-shadow 0.1s;
+    margin-right: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 0.98;
+}
+
+#cancel-button:active
+{
+    font-size: 47px;
+    box-shadow: none;
+}
+
+#map
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    margin-bottom: 100px;
+}
+/*Slide show container*/
+.slideshow-container 
+{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    height: 700px;
+    margin-bottom: 100px;
+}
+
+.mySlides img
+{
+    height: 700px;
+    object-fit: cover;
+}
+
+/* Fading animation */
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade 
+{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade 
+{
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/*Services Shortcut*/
+#services-container
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background-image: url(services.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    padding-top: 200px;
+    padding-bottom:200px;
+}
+.clearfix::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.services
+{
+    width: 35%;
+    text-align: center;
+    position: relative;
+    height: 500px;
+    -webkit-transition: box-shadow 0.4s;
+    -moz-transition: box-shadow 0.4s;
+    -o-transition: box-shadow 0.4s;
+    transition: box-shadow 0.4s;
+    cursor: pointer;
+    float: left; 
+    transition: all 0.4s
+}
+
+.services:hover
+{
+    transform: scale(1.4);
+}
+
+.space-div
+{
+    width: 10%;
+    float: left;
+}
+ 
+
+.services img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.services .caption
+{
+    width: 100%;
+    position: absolute;
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bold;
+    top:50%;
+}
+
+.button-container
+{
+    
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+}
+
+.button-container button
+{
+    background-color:#8e2bdf;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px grey, -2px -2px 5px grey;
+    width: 110px;
+    height: 30px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.button-container button:active
+{
+    box-shadow: none;
+}
+
+.button-container button:hover
+{
+    background-color: transparent;
+    border: 2px solid #8e2bdf;
+    color: black;  
+}
+
+@media screen and (max-width: 600px)
+{
+    #wnote-text
+    {
+        font-size: 1em;
+    } 
+    
+    #welcome
+    {
+      font-size: 2em;
+      -webkit-text-stroke: 2px black;
+    }
+
+    #join-button
+    {
+        width: 100px;
+        padding: 10px initial;
+        font-size: 1em;
+    }
+    #map
+    {
+        height: 400px;
+    }
+
+    .slideshow-container 
+    {
+        height: 400px;
+    }
+
+    .mySlides img
+    {
+        height: 400px;
+    }
+
+    .services
+    {
+        height: 200px;
+        float: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services .caption
+    {
+        font-size: 1.2em;
+    }
+
+    .button-container button
+    {
+        width: 90px;
+        font-size: 0.8em;
+    }
+
+    .button-container
+    {
+        bottom: 10%;
+    }
+
+    #services-container
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .space-div
+    {
+        display: none;
+    }
+
+    #welcome-note
+    {
+        width: 95%;
+        height: 500px;
+        margin-bottom: 10px
+    }
+
+}
